@@ -1,0 +1,38 @@
+version: "3.1"
+
+stories:
+  - story: привет и пока
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: привет, информация и архитектура
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_microservices
+      - action: utter_microservices
+      - intent: ask_more
+      - action: utter_microservices_more
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: привет и паттерны
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_patterns
+      - action: utter_patterns
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: привет и архитектура
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_architecture
+      - action: utter_architecture
+      - intent: goodbye
+      - action: utter_goodbye
